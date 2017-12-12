@@ -15,10 +15,10 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # github project pages deploy
-# activate :deploy do |deploy|
-#   deploy.deploy_method = :git
-#   deploy.build_before = true # default: false
-# end
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true # default: false
+end
 
 
 configure :build do
