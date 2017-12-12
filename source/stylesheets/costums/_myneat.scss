@@ -1,0 +1,20 @@
+ // The default $neat-grid variable, is a map which powers Neat's mixins.
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+  direction: ltr,
+);
+
+$my-desktop-grid: (
+  columns: 12,
+  gutter: 32px,
+  media: 1200px,
+);
+
+$my-mobile-grid: (
+  columns: 6,
+  gutter: 24px,
+  media: 768px,
+);
+
+ 
