@@ -1,0 +1,67 @@
+
+* * { box-sizing: border-box; }
+body {
+	height: 100%;
+}
+// primary color
+h2,h3,h4,h5,h5,p {
+	font-family: "Muli",avenir,"helvetica neue"
+	,helvetica,ubuntu,
+	roboto,noto,"segoe ui",arial,sans-serif;
+	-webkit-font-smoothing: antialiased;	
+}
+
+a {
+	text-decoration: none;
+	a:hover {
+		color: #548;
+    	background-color: transparent;
+	}
+}
+.welcome-info {
+	p {
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 1.4em;
+		text-align: center;
+		// color: #999;
+		font-weight: 200;
+	}
+}
+
+
+.title {
+	line-height: 1.25;
+	color: #fbc547;
+	font-size: 3rem;
+	padding: 1em;
+    text-align: center;
+	@include grid-media($my-desktop-grid) {
+		text-align: center;
+		padding: 80px
+	}
+}
+
+
+hr {
+	background-color: #ebb951;
+	clear: both;
+}
+// Using Neat grid from myneat.cscss file
+.container {
+	@include grid-column(12, $neat-grid);
+}
+
+// Custom grid for mobile from myneat.cscss file
+.section_1 {
+	@include grid-media($my-desktop-grid) {
+		@include grid-column(6);
+	}
+}
+
+@include grid-media($my-desktop-grid) {
+	.section_2 {
+		@include grid-column(6);
+	}
+}
+

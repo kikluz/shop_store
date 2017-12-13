@@ -4,6 +4,7 @@
 @import "base/base";   /* Bitters needs to be imported before Neat */
 @import "neat";
 
-@import "costums/myneat";
-@import "costums/basics";
+@import "myneat";
+@import "basics";
+@import "normalize";
 
