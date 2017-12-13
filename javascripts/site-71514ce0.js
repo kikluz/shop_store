@@ -1,0 +1,1 @@
+$(document).ready(function(){var e="#nav",t="nav-open";$(".nav-menu").click(function(){if($(e).hasClass(t))$(e).animate({height:0},300),setTimeout(function(){$(e).removeClass(t).removeAttr("style")},320);else{var a=$(e).css("height","auto").height();$(e).height(0).animate({height:a},300),setTimeout(function(){$(e).addClass(t).removeAttr("style")},320)}})});
