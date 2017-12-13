@@ -1,18 +1,19 @@
-// jquery goes here
-$(document).ready(function(){
-  $(".set > a").on("click", function(){
-    if($(this).hasClass('active')){
-      $(this).removeClass("active");
-      $(this).siblings('.content').slideUp(200);
-      $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
-    }else{
-      $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
-    $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
-    $(".set > a").removeClass("active");
-    $(this).addClass("active");
-    $('.content').slideUp(200);
-    $(this).siblings('.content').slideDown(200);
+$(document).ready(function() {
+  var n = '#nav', no = 'nav-open';
+  $('.nav-menu').click(function() {
+    if ($(n).hasClass(no)) {
+      //$(n).removeClass(no);
+      $(n).animate({height:0},300);
+      setTimeout(function(){
+        $(n).removeClass(no).removeAttr('style');
+      },320);
     }
-    
+    else {
+      var newH = $(n).css('height','auto').height();
+      $(n).height(0).animate({height:newH},300);
+      setTimeout(function(){
+        $(n).addClass(no).removeAttr('style');
+      },320); 
+    }
   });
 });
