@@ -1,3 +1,4 @@
+// https://codepen.io/SmaragdaTh/pen/LERvNq
 $(document).ready(function() {
   var n = '#nav', no = 'nav-open';
   $('.nav-menu').click(function() {
