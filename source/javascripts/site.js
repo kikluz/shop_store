@@ -1,1 +1,1 @@
-//= require "_jquery"
+//= require "_nav"

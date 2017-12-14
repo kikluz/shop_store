@@ -1,12 +1,19 @@
 <nav class="nav-bar">
   <div class="nav-hold">
-    <a href="#" class="nav-logo">Responsive Nav</a>
-    <a id="nav-menu" class="nav-menu"><i class="fa fa-bars  fa-2x" aria-hidden="true"></i></a>
+    <%= link_to 'Shop Site', '/index.html', class: "nav-logo", :relative => true %>
+    
+
+    <a id="nav-menu" class="nav-menu">
+    	<i class="fa fa-bars  fa-2x" aria-hidden="true"></i>
+    </a>
+
     <ul class="nav-list" id="nav">
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#cat-pictures">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#lorem-ipsum">Lorem</a></li>
+     <li>
+     	<%= link_to 'Home', '/index.html', :relative => true %>
+     </li> 
+     <li>
+     	<%= link_to 'Shop', '/shop.html', :relative => true %>
+     </li> 
     </ul>
   </div>
 </nav>

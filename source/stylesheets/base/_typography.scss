@@ -29,11 +29,11 @@ a {
   &:hover {
     color: shade($action-color, 25%);
   }
-
-  &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
-  }
+// comment this line of code to removed focus on clink
+  // &:focus {
+  //   outline: $focus-outline;
+  //   outline-offset: $focus-outline-offset;
+  // }
 }
 
 hr {
