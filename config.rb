@@ -36,7 +36,7 @@ end
 ENV["snipcart-api-key"] = "NWIxYmI4Y2QtMGRhOC00ZTdjLWI1YTctZmQ0NTI0MzJkM2NmNjM2Mjc0NTUxNDQwNTExMTM0"
 
 # environment variable to keep the base site URL
-ENV["base-url"] = "http://kikluz.com/shop_store/"
+ENV["base-url"] = "http://localhost:4567"
  # creating a template helper to generate a Snipcart button.
 helpers do
   def snipcart_button (p, text)
@@ -54,6 +54,10 @@ helpers do
       text
     end
   end
+end
+# we need to be able to display it when the product URL is called
+data.products.each do |p|
+  proxy p.path + "/index.html", "product.html", :locals => { :product => p }, :ignore => true
 end
 
 
